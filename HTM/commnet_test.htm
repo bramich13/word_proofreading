@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+      <title>Test Comment Section</title>
+		<script src="../JS/comment_test.js" type="text/javascript">
+		</script>
+		
+		
+	   <link href="../CSS/testimonials.css" rel="stylesheet" type="text/css" 
+								media="screen and (min-width: 501px)"/>
+	   <link href="../CSS/testimonials-comments.css" rel="stylesheet" type="text/css" 
+								media="screen and (min-width: 501px)"/>
+
+</head>
+<body>
+<form>
+<h1> What's on your mind?</h1>
+<div class="name">
+<input type="text" name="first" id="first" placeholder="First name" required="required"	/>
+<input type="text" name="last" id="last" placeholder="Last name" required= "required" />
+</div>
+<div class="info">
+<input type="email" name="email" id="email" placeholder="emailaddress@mail.com" required="required" />
+<input type="text" name="subject" id="sub" placeholder="Subject" required="required" />
+</div>
+<textarea type="text" name="commentBox" id="commentBox" placeholder="Comment (500 charter limit)" maxlength= "500" required="required"> </textarea>
+<input type="button" name="submit" value="Submit" onclick='post()' />
+</form>
+</section>
+<section class="postedComments">
+<p id="subject"></p>
+ <p id="comment">Be the first to leave a comment!</p>
+ <p id="name">-</p>
+</section>
+</body>
+</html>
